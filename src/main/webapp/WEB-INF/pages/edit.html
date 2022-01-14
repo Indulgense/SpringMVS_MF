@@ -28,7 +28,6 @@
                 <div style="color:red" th:if="${#fields.hasErrors('surname')}" th:errors="*{lastName}">lastName error</div>
             </td>
         </tr>
-        <br>
         <tr>
             <td>
                 <label for="email">Enter email</label>
@@ -36,7 +35,6 @@
                 <div style="color:red" th:if="${#fields.hasErrors('email')}" th:errors="*{email}">email error</div>
             </td>
         </tr>
-        <br>
         <tr>
             <td>
                 <input type="submit" class="buttonEdit" value="Edit user"/>
