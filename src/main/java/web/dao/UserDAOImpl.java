@@ -1,6 +1,6 @@
 package web.dao;
 
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 import web.model.User;
 
 import javax.persistence.EntityManager;
@@ -9,17 +9,10 @@ import javax.transaction.Transactional;
 import java.util.ArrayList;
 import java.util.List;
 
-@Component
+@Repository
 @Transactional
 public class UserDAOImpl implements UserDAO{
-    private List<User> users = new ArrayList<>();
-    {
-        users.add(new User("Max","Spar","qwe@bk.ru"));
-        users.add(new User("Ivan","Petrov","one@pntr.io"));
-        users.add(new User("Mariya","Ivanova","brv@gmail.com"));
-        users.add(new User("Anna","Elina","am@yandex.ru"));
-        users.add(new User("Jane","Kryshkina","5965@rambler.ru"));
-    }
+
 
     @PersistenceContext
     private EntityManager entityManager;
