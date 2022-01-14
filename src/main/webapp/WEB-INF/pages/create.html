@@ -12,14 +12,12 @@
             <td>
                 <label for="name">Enter name</label>
                 <input type="text" th:field="*{name}" id="name" required/>
-                <div style="color:red" th:if="${#fields.hasErrors('name')}" th:errors="*{name}">name error</div>
             </td>
         </tr>
         <tr>
             <td>
                 <label for="surname">Enter lastname</label>
                 <input type="text" th:field="*{lastName}" id="surname"/>
-                <div style="color:red" th:if="${#fields.hasErrors('lastName')}" th:errors="*{lastName}">surname error</div>
             </td>
         </tr>
         <br>
@@ -27,7 +25,6 @@
             <td>
                 <label for="email">Enter email</label>
                 <input type="text" th:field="*{email}" id="email"/>
-                <div style="color:red" th:if="${#fields.hasErrors('email')}" th:errors="*{email}">email error</div>
             </td>
         </tr>
         <br>
